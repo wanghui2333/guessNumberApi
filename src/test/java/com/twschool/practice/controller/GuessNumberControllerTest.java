@@ -78,7 +78,7 @@ public class GuessNumberControllerTest {
     public void should_return_4A0B_given_1234_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("1 2 3 4","1 2 3 4");
+        String actual = guessNumberService.judge("1 2 3 4","1 2 3 4");
         String expect = "4A0B";
         assert expect.equals(actual);
 
@@ -88,7 +88,7 @@ public class GuessNumberControllerTest {
     public void should_return_2A2B_given_1243_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("1 2 4 3","1 2 3 4");
+        String actual = guessNumberService.judge("1 2 4 3","1 2 3 4");
         String expect = "2A2B";
         assert expect.equals(actual);
 
@@ -98,7 +98,7 @@ public class GuessNumberControllerTest {
     public void should_return_1A2B_given_1043_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("1 0 4 3","1 2 3 4");
+        String actual = guessNumberService.judge("1 0 4 3","1 2 3 4");
         String expect = "1A2B";
         assert expect.equals(actual);
 
@@ -108,7 +108,7 @@ public class GuessNumberControllerTest {
     public void should_return_0A4B_given_4321_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("4 3 2 1","1 2 3 4");
+        String actual = guessNumberService.judge("4 3 2 1","1 2 3 4");
         String expect = "0A4B";
         assert expect.equals(actual);
 
@@ -118,7 +118,7 @@ public class GuessNumberControllerTest {
     public void should_return_0A3B_given_4351_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("4 3 5 1","1 2 3 4");
+        String actual = guessNumberService.judge("4 3 5 1","1 2 3 4");
         String expect = "0A3B";
         assert expect.equals(actual);
 
@@ -128,7 +128,7 @@ public class GuessNumberControllerTest {
     public void should_return_0A0B_given_5678_answer_1234(){
         GuessNumberService guessNumberService = new GuessNumberService();
 
-        String actual = guessNumberService.playGame("5 6 7 8","1 2 3 4");
+        String actual = guessNumberService.judge("5 6 7 8","1 2 3 4");
         String expect = "0A0B";
         assert expect.equals(actual);
 

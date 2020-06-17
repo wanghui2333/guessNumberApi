@@ -1,7 +1,12 @@
 package com.twschool.practice.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.twschool.practice.domain.UserGameInfo;
 import com.twschool.practice.domain.UserGameInfoDTO;
+import com.twschool.practice.domain.UserGameResponse;
+import com.twschool.practice.repository.UserGameRepository;
+import com.twschool.practice.service.GuessNumberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -15,6 +20,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/guess-number")
 public class GuessNumberController {
 
+    @Autowired
+    GuessNumberService guessNumberService;
+
+    @Autowired
+    UserGameRepository userGameRepository;
     @GetMapping("/check")
     public JSONObject check(@RequestParam(value = "guess") String guess){
 
@@ -31,17 +41,25 @@ public class GuessNumberController {
     }
 
     @PostMapping("/check")
-    public JSONObject check(@RequestBody UserGameInfoDTO userGameInfoDTO){
+    public UserGameResponse check(@RequestBody UserGameInfoDTO userGameInfoDTO){
 
-        JSONObject dataJson = new JSONObject();
-        dataJson.put("output","4A0B");
-        dataJson.put("instruction","success");
+        UserGameInfo userGameInfo = userGameRepository.getUserGameInfoById(userGameInfoDTO.getUserId());
 
-        JSONObject resultJson = new JSONObject();
-        resultJson.put("code","200");
-        resultJson.put("data", dataJson);
+        if (userGameInfo == null){
+            UserGameInfo registerUserGameInfo = new UserGameInfo();
+            registerUserGameInfo.setAnswer(null);
+            registerUserGameInfo.setCount(0);
+            registerUserGameInfo.setIntegral(0);
+            registerUserGameInfo.setUserId(userGameInfoDTO.getUserId());
+            registerUserGameInfo.setExtraIntegral(0);
+            registerUserGameInfo.setContinuousRightCount(0);
 
-        return resultJson;
+            userGameRepository.registerUserGameInfo(registerUserGameInfo);
+
+            userGameInfo = registerUserGameInfo;
+        }
+
+        return guessNumberService.playGame(userGameInfoDTO.getGuess(), userGameInfo);
 
     }
 }

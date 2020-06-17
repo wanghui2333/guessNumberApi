@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd9f9b72-f636-44a5-91c6-7734468ada9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/GuessNumberApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/UserGameInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/service/GuessNumberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twschool/practice/controller/GuessNumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/controller/GuessNumberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/GuessNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/GuessNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/twschool/practice/controller/GuessNumberControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/twschool/practice/controller/GuessNumberControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/GuessNumberGameSpringBootApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/console/ConsoleInputReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/console/ConsoleOutputWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/console/GuessNumberGameConsole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/console/GuessNumberGameConsoleApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/domain/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/domain/GameStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/domain/GuessNumberGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twschool/practice/domain/RandomAnswerGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/HelloTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/console/ConsoleInputReaderTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/console/ConsoleOutputWriterTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/console/GuessNumberGameConsoleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/controller/GuessNumberControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/controller/GuessNumberControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/domain/AnswerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/domain/GuessNumberGameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twschool/practice/domain/RandomAnswerGeneratorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/UserGameInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/UserGameInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +47,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/UserGameInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -276,6 +255,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/twschool/practice/domain" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -404,7 +389,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592398211714</updated>
-      <workItem from="1592398213317" duration="1479000" />
+      <workItem from="1592398213317" duration="1732000" />
     </task>
     <servers />
   </component>
@@ -441,7 +426,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1479000" />
+    <option name="totallyTimeSpent" value="1732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -456,7 +441,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32891566" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -465,7 +450,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -550,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/console/GuessInputCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.62/fastjson-1.2.62.jar!/com/alibaba/fastjson/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -571,24 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/GuessNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/twschool/practice/controller/GuessNumberControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/service/GuessNumberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -599,10 +563,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/GuessNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/service/GuessNumberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/console/GuessInputCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/twschool/practice/domain/UserGameInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="345">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

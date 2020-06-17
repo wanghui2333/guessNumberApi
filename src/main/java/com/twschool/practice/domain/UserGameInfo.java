@@ -1,5 +1,8 @@
 package com.twschool.practice.domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 功能描述 : 用户游戏存档信息
  *
@@ -29,4 +32,14 @@ public class UserGameInfo {
      */
     Integer extraIntegral = 0;
 
+    /**
+     * 历史积分信息
+     */
+    List<History> histories = new ArrayList<>(32);
+
+    class History {
+        Integer totalIntegral = 0;
+
+        String time;
+    }
 }

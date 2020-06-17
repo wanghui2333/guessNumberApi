@@ -54,6 +54,15 @@ public class UserGameResponse {
 
         String instruction;
 
+        public Message(String result, String userId, Integer count, Integer continuousRightCount, Integer integralTotal, String instruction) {
+            this.result = result;
+            this.userId = userId;
+            this.count = count;
+            this.continuousRightCount = continuousRightCount;
+            this.integralTotal = integralTotal;
+            this.instruction = instruction;
+        }
+
         public String getResult() {
             return result;
         }

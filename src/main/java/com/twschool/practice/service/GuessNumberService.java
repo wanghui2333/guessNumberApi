@@ -40,6 +40,10 @@ public class GuessNumberService {
 
     public UserGameResponse playGame(String guess, UserGameInfo userGameInfo) {
 
+        if (userGameInfo.getCount() >= 6){
+            userGameInfo.setCount(0);
+        }
+
         if (userGameInfo.getAnswer() == null){
             // 生成answer
             userGameInfo.setAnswer(generateNumber());
@@ -62,40 +66,32 @@ public class GuessNumberService {
 
             userGameRepository.updateUserGameInfoById(userGameInfo.getUserId(), userGameInfo);
 
-            UserGameResponse.Message message = new UserGameResponse.Message();
-            message.setResult(result);
-            message.setContinuousRightCount(userGameInfo.getContinuousRightCount());
-            message.setCount(userGameInfo.getCount());
-            message.setUserId(userGameInfo.getUserId());
-            message.setIntegralTotal(userGameInfo.getIntegral() + userGameInfo.getExtraIntegral());
-            message.setInstruction("Right!");
+            UserGameResponse.Message message = new UserGameResponse.Message(
+                    result,userGameInfo.getUserId(),userGameInfo.getCount(), userGameInfo.getContinuousRightCount(),
+                    userGameInfo.getIntegral() + userGameInfo.getExtraIntegral(), "Right!");
 
             userGameResponse.setMessage(message);
 
             return userGameResponse;
         }
 
-        // 扣分
-        userGameInfo.setIntegral(userGameInfo.getIntegral() - 3);
+
         userGameInfo.setContinuousRightCount(0);
 
         // 判断用户执行是否超过6次
         userGameInfo.setCount(userGameInfo.getCount() + 1);
 
         if (userGameInfo.getCount() >= 6){
-            userGameInfo.setCount(0);
+            // 扣分
+            userGameInfo.setIntegral(userGameInfo.getIntegral() - 3);
             userGameInfo.setAnswer(null);
         }
 
         userGameRepository.updateUserGameInfoById(userGameInfo.getUserId(), userGameInfo);
 
-        UserGameResponse.Message message = new UserGameResponse.Message();
-        message.setResult(result);
-        message.setContinuousRightCount(userGameInfo.getContinuousRightCount());
-        message.setCount(userGameInfo.getCount());
-        message.setUserId(userGameInfo.getUserId());
-        message.setIntegralTotal(userGameInfo.getIntegral() + userGameInfo.getExtraIntegral());
-        message.setInstruction("Wrong!");
+        UserGameResponse.Message message = new UserGameResponse.Message(
+                result,userGameInfo.getUserId(),userGameInfo.getCount(),userGameInfo.getContinuousRightCount(),
+                userGameInfo.getIntegral() + userGameInfo.getExtraIntegral(), "Wrong!");
 
         userGameResponse.setMessage(message);
 

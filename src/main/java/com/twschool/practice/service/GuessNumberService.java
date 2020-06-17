@@ -61,7 +61,7 @@ public class GuessNumberService {
             userGameInfo.setCount(0);
             userGameInfo.setAnswer(null);
             userGameInfo.setContinuousRightCount(continuousRightCount);
-            userGameInfo.setExtraIntegral(userGameInfo.getExtraIntegral() + integralRule(continuousRightCount));
+            userGameInfo.setExtraIntegral(integralRule(continuousRightCount));
             userGameInfo.setIntegral(userGameInfo.getIntegral() + 3);
 
             userGameRepository.updateUserGameInfoById(userGameInfo.getUserId(), userGameInfo);
@@ -74,7 +74,6 @@ public class GuessNumberService {
 
             return userGameResponse;
         }
-
 
         userGameInfo.setContinuousRightCount(0);
 

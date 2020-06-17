@@ -18,9 +18,19 @@ public class UserGameInfo {
     String userId;
 
     /**
+     * 游戏答案
+     */
+    String answer;
+
+    /**
      * 用户本次玩的次数
      */
     Integer count = 0;
+
+    /**
+     * 用户连续正确次数
+     */
+    Integer continuousRightCount = 0;
 
     /**
      * 积分

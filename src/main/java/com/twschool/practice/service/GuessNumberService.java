@@ -6,7 +6,6 @@ import com.twschool.practice.domain.UserGameResponse;
 import com.twschool.practice.repository.UserGameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.Collections;
 import java.util.HashSet;

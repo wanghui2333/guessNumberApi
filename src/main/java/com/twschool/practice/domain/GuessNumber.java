@@ -20,9 +20,9 @@ public class GuessNumber {
     public String generateNumber() {
         List<Integer> numberSource = IntStream.range(1, 9).boxed().collect(Collectors.toList());
         Collections.shuffle(numberSource);
-        String numbers = numberSource.stream().limit(4).map(String::valueOf).toString();
+        String numbers = numberSource.stream().limit(4).map(String::valueOf).collect(Collectors.joining(" "));
 
-        return numbers.replace("", " ").trim();
+        return numbers;
     }
 
 

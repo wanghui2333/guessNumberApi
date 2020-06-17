@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/guess-number")
 public class GuessNumberController {
 
+
+
     @GetMapping("/check")
     public JSONObject check(@RequestParam(value = "guess") String guess){
 
